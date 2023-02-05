@@ -1,0 +1,9 @@
+main {
+  max-width: 500px;
+  padding: 20px;
+  margin: 0 auto;
+}
+
+.dietary span {
+  display: block;
+}

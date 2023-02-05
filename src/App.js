@@ -1,7 +1,7 @@
 import React from "react";
-import Form from "./Form";
+import FormContainer from "./components/FormContainer";
 import "./App.css";
 
 export default function App() {
-  return <Form />;
+  return <FormContainer />;
 }
