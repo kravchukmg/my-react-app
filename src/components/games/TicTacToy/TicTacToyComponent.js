@@ -14,9 +14,9 @@ export default function TicTacToyComponent() {
 
   const handleWinner = (winner) => {
     if (winner === "cross") {
-      subtitleRef.current.innerHTML = `<img src="${cross}" alt="cross">&nbsp;Wins`;
+      subtitleRef.current.innerHTML = `<img src="${cross}" alt="cross">&nbsp;wins`;
     } else {
-      subtitleRef.current.innerHTML = `<img src="${circle}" alt="circle">&nbsp;Wins`;
+      subtitleRef.current.innerHTML = `<img src="${circle}" alt="circle">&nbsp;wins`;
     }
     setLock(true);
   };
@@ -74,7 +74,7 @@ export default function TicTacToyComponent() {
   };
 
   const handleReset = () => {
-    subtitleRef.current.innerHTML = "";
+    subtitleRef.current.innerHTML = "&nbsp;";
     setData(["", "", "", "", "", "", "", "", ""]);
     setLock(false);
     setCount(0);
@@ -96,7 +96,7 @@ export default function TicTacToyComponent() {
             />
           )}
         </div>
-        <h2 className="subtitle" ref={subtitleRef}></h2>
+        <h2 className="subtitle" ref={subtitleRef}>&nbsp;</h2>
         <button className="reset" onClick={handleReset}>
           Reset
         </button>
