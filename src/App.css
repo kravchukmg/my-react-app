@@ -1,3 +1,16 @@
+.main {
+  display: flex;
+  justify-content: center;
+  padding: 20px;
+  margin: 0 auto;
+}
+
+h1 {
+  background-color: lightblue;
+  text-align: center;
+  text-transform: uppercase;
+}
+
 .App {
   text-align: center;
 }

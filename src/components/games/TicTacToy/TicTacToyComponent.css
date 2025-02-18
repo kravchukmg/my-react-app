@@ -1,0 +1,62 @@
+.game {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  max-width: 600px;
+}
+
+.title {
+  display: flex;
+  align-items: center;
+  margin: 0 0 10px;
+}
+
+.title img {
+  width: 25px;
+}
+
+.subtitle {
+  display: flex;
+  align-items: center;
+  margin: 10px 0 0;
+}
+
+.subtitle img {
+  width: 20px;
+}
+
+.board {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2px;
+}
+
+.cell {
+  width: 50px;
+  height: 50px;
+  border: 1px solid transparent;
+  border-radius: 5px;
+  background-color: lightblue;
+  transition: border-color 0.3s;
+  cursor: pointer;
+}
+.cell:hover {
+  border-color: #000;
+}
+.circle,
+.cross {
+  pointer-events: none;
+}
+.circle {
+  background: url(../../../assets/img/games/tic-tac-toe/circle.png) center / contain
+    no-repeat lightblue;
+}
+.cross {
+  background: url(../../../assets/img/games/tic-tac-toe/cross.png) center / contain
+    no-repeat lightblue;
+}
+
+.reset {
+  margin-top: 10px;
+}
